@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Ananiah Bartsch">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/page3.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <script src="script/form_validation.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page2_ABa56940.html">Our Novel</a></li>
+                    <li><a href="page3_ABa56940.html">Updates</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <section>
+                <p class="updated_txt">
+                    <span class="large_text">Want to Stay Updated?</span> <br><br>
+                    Join our mailing list below to get updates on development, release and live
+                    event scheduling.  Registering is easy and you'll never miss an update or 
+                    opportunity to get involved.
+                </p>
+                <form name="myForm" action='' method="get" enctype="application/x-www-form-urlencoded">
+                    <fieldset>
+                        <legend>Join Our Mailing List</legend>
+                        <div class="inputdiv">
+                            <label for="firstname">Your First Name:</label>
+                            <input type="text" name="firstname" id="firstname"
+                                placeholder="Please enter your first name." required>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="lastname">Your Last Name:</label>
+                            <input type="text" name="firstname" id="firstname"
+                                placeholder="Please enter your last name." required>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="email">Your Email Adress:</label>
+                            <input type="email" name="email" id="email"
+                                placeholder="youradress@domain.com" required>
+                        </div>
+                        <div class="inputdiv">
+                            <label for="date">Choose Today's Date:</label>
+                            <input type="date" name="date" id="date" 
+                                min="2021-11-28" max="2021-12-31" required>
+                        </div>
+                        <div class="controls">
+                            <input type="button" value="Joind Our List!" 
+                            onclick= "runValidation(this.form)">
+                            <input type="reset" value="Clear Information">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <footer>
+            Copyright &copy; Ananiah Bartsch.  Characters are the property of The Wolves of Tuerpriest&trade;.
+        </footer>
+    </body>
+</html>
